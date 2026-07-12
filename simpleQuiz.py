@@ -43,7 +43,7 @@ def runQuiz():
     print ("Please enter A, B, C or D when prompted to answer.")
     time.sleep(5)
     clear()
-    for q in range(4):
+    for q in range(6):
         question(q)
     
     
@@ -59,7 +59,9 @@ def question(questionNum):
             time.sleep(1)
         answerOne = input("Please enter your choice.").upper()
         if answerOne not in Options:
-            answerOne = input("Invalid choice, please try again.").upper()
+            print("Invalid choice, please try again.")
+            time.sleep(2)
+            question(questionNum)
         else:
             if answerOne == "C":
                 score += 1
@@ -75,67 +77,97 @@ def question(questionNum):
         for i in questionTwoAnswers:            
             print (i + ": " + questionTwoAnswers[i])
             time.sleep(1)
-        answerOne = input("Please enter your choice.").upper()
-        if answerOne not in Options:
-            answerOne = input("Invalid choice, please try again.").upper()
+        answerTwo = input("Please enter your choice.").upper()
+        if answerTwo not in Options:
+            print("Invalid choice, please try again.")
+            time.sleep(2)
+            question(questionNum)
         else:
-            if answerOne == "C":
+            if answerTwo == "A":
                 score += 1
                 print ("Correct! Current score: " + str(score) + "/5")
             else:
                 print("Incorrect! Current score: " + str(score) + "/5")
                 
     elif questionNum == 2:
-        print ("Question 2!")
+        print ("Question 3!")
         time.sleep(1)
-        print (questionTwo)
-        for i in questionTwoAnswers:            
-            print (i + ": " + questionTwoAnswers[i])
+        print (questionThree)
+        for i in questionThreeAnswers:            
+            print (i + ": " + questionThreeAnswers[i])
             time.sleep(1)
-        answerOne = input("Please enter your choice.").upper()
-        if answerOne not in Options:
-            answerOne = input("Invalid choice, please try again.").upper()
+        answerThree = input("Please enter your choice.").upper()
+        if answerThree not in Options:
+            print("Invalid choice, please try again.")
+            time.sleep(2)
+            question(questionNum)
         else:
-            if answerOne == "C":
+            if answerThree == "A":
                 score += 1
                 print ("Correct! Current score: " + str(score) + "/5")
             else:
                 print("Incorrect! Current score: " + str(score) + "/5")
                 
     elif questionNum == 3:
-        print ("Question 2!")
+        print ("Question 4!")
         time.sleep(1)
-        print (questionTwo)
-        for i in questionTwoAnswers:            
-            print (i + ": " + questionTwoAnswers[i])
+        print (questionFour)
+        for i in questionFourAnswers:            
+            print (i + ": " + questionFourAnswers[i])
             time.sleep(1)
-        answerOne = input("Please enter your choice.").upper()
-        if answerOne not in Options:
-            answerOne = input("Invalid choice, please try again.").upper()
+        answerFour = input("Please enter your choice.").upper()
+        if answerFour not in Options:
+            print("Invalid choice, please try again.")
+            time.sleep(2)
+            question(questionNum)
         else:
-            if answerOne == "C":
+            if answerFour == "B":
                 score += 1
                 print ("Correct! Current score: " + str(score) + "/5")
             else:
                 print("Incorrect! Current score: " + str(score) + "/5")
                 
     elif questionNum == 4:
-        print ("Question 2!")
+        print ("Question 5!")
         time.sleep(1)
-        print (questionTwo)
-        for i in questionTwoAnswers:            
-            print (i + ": " + questionTwoAnswers[i])
+        print (questionFive)
+        for i in questionFiveAnswers:            
+            print (i + ": " + questionFiveAnswers[i])
             time.sleep(1)
-        answerOne = input("Please enter your choice.").upper()
-        if answerOne not in Options:
+        answerFive = input("Please enter your choice.").upper()
+        if answerFive not in Options:
             print("Invalid choice, please try again.")
+            time.sleep(2)
+            question(questionNum)
             
         else:
-            if answerOne == "C":
+            if answerFive == "D":
                 score += 1
                 print ("Correct! Current score: " + str(score) + "/5")
             else:
                 print("Incorrect! Current score: " + str(score) + "/5")
+                
+    else:
+        time.sleep(1)
+        print("You've reached the end of the quiz!")
+        time.sleep(1)
+        print("Your score is: " + str(score) + "/5")
+        time.sleep(1)
+        if score == 0:
+            print("Wow, absolutely nothing. Try a bit harder next time.")
+        elif score == 1:
+            print("Well at least you got one right.")
+        elif score == 2:
+            print("It could be worse I suppose.")
+        elif score == 3:
+            print("Bang average, mid.")
+        elif score == 4:
+            print("Wow, good job")
+        elif score == 5:
+            print("Perfect Score! Well done!")
+        else:
+            print("I'm not sure how you managed that in all honesty")
+            
                 
 runQuiz()
 
