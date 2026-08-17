@@ -10,7 +10,7 @@ import time
 
 clear = lambda: os.system('cls')
 
-testFish = {"season" : "Winter", "weather" : "Rain", "time" : "Morning", "name" : "Test Fish 1" } 
+testFish = {"season" : "Winter", "weather" : "Rain", "time" : "Morning", "area" : "Beach", "name" : "Test Fish 1" } 
 
 def findFish():
     print ("Welcome to the fish finder!")
