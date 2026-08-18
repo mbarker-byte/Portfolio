@@ -4,7 +4,7 @@ import csv
 
 clear = lambda: os.system('cls')
 
-testFish = {"season" : "Winter", "weather" : "Rain", "time" : "Morning", "name" : "Test Fish 1" } 
+testFish = {"season" : "Winter", "time" : "Morning", "weather" : "Rain", "name" : "Test Fish 1" } 
 
 def getFish():
     fishList = []
@@ -13,6 +13,22 @@ def getFish():
         for fish in fishReader:
             fishList.append(fish)
     return fishList
+
+class Fish:
+    def __init__(self, fishSeason, fishTime, fishWeather, fishName):
+        self.fishSeason = fishSeason
+        self.fishTime = fishTime
+        self.fishWeather = fishWeather
+        self.fishName = fishName
+        
+testFishObject = Fish(testFish["season"], testFish["time"], testFish["weather"], testFish["name"])
+
+print (testFishObject)
+print (testFishObject.fishSeason)
+print (testFishObject.fishTime)
+print (testFishObject.fishWeather)
+print (testFishObject.fishName)
+        
 
 def fishSeason():
     print("What season is it?")
@@ -83,7 +99,4 @@ def findFish():
     
     fishTime()
     fishWeather()
-    
-    for fish in fishList:
-        if
     
