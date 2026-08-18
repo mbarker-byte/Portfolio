@@ -5,13 +5,15 @@ import csv
 clear = lambda: os.system('cls')
 
 testFish = {"season" : "Winter", "weather" : "Rain", "time" : "Morning", "name" : "Test Fish 1" } 
-fishList = []
 
-with open('fish.csv') as csvfile:
-    fishReader = csv.reader(csvfile, delimiter=',', quotechar='|')
-    for fish in fishReader:
-        fishList.append(fish)
-        
+def getFish():
+    fishList = []
+    with open('fish.csv') as csvfile:
+        fishReader = csv.reader(csvfile, delimiter=',', quotechar='|')
+        for fish in fishReader:
+            fishList.append(fish)
+    return fishList
+
 def fishSeason():
     print("What season is it?")
     time.sleep(1)
@@ -25,10 +27,12 @@ def fishSeason():
     fishSeason = input("Please choose a season:").lower()
     if fishSeason not in ('a', 'b', 'c', 'd'):
         print("Invalid option, please try again.")
+        time.sleep(2)
+        clear()
         fishSeason()
     clear()
     time.sleep(2)
-        return fishSeason
+    return fishSeason
     
 def fishTime():
     print("What time is it?")
@@ -40,6 +44,11 @@ def fishTime():
     print("Night: C")
     time.sleep(1)
     fishTime = input("Please choose a time:").lower()
+    if fishSeason not in ('a', 'b', 'c'):
+        print("Invalid option, please try again.")
+        time.sleep(2)
+        clear()
+        fishSeason()
     clear()
     time.sleep(2)
     return fishTime
@@ -54,6 +63,11 @@ def fishWeather():
     print("Stormy: C")
     time.sleep(1)
     fishWeather = input("Please choose the weather.").lower()
+    if fishSeason not in ('a', 'b'):
+        print("Invalid option, please try again.")
+        time.sleep(2)
+        clear()
+        fishSeason()
     clear()
     time.sleep(2)
     return fishWeather
@@ -72,3 +86,4 @@ def findFish():
     
     for fish in fishList:
         if
+    
