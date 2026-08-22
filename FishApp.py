@@ -1,10 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Aug 17 20:27:00 2026
+
+@author: MBark
+"""
+
 import os
 import time
 import csv
 
 clear = lambda: os.system('cls')
 
-testFish = {"season" : "Winter", "time" : "Morning", "weather" : "Rain", "name" : "Test Fish 1" } 
+testFish = [{"season" : "Winter", "time" : "Morning", "weather" : "Rain", "name" : "Test Fish 1" },
+            {"season" : "Summer", "time" : "Afternoon", "weather" : "Rain", "name" : "Test Fish 1" },
+            {"season" : "Spring", "time" : "Night", "weather" : "Rain", "name" : "Test Fish 1" }
+            ]
 
 def getFish():
     fishList = []
@@ -95,8 +105,12 @@ def findFish():
     time.sleep(2)
     print("Please enter information when prompted.")
     time.sleep(2)
-    fishSeason()
-    
-    fishTime()
-    fishWeather()
+    s = fishSeason()    
+    t = fishTime()
+    w = fishWeather()
+    for  in testFish:
+        if testFish["season"] == fishSeason():
+            if testFish["time"] == fishTime():
+                if testFish["weather"] == fishWeather():
+                    print ("You can catch " + testFish["name"] + at testFish["area"])
     
