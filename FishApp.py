@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 17 20:27:00 2026
-
-@author: MBark
-"""
+#TODO: Add area value value to fish class to allow players to catch. improve logic, removing testing statements
 
 import os
 import time
