@@ -1,4 +1,9 @@
-#TODO: Add area value value to fish class to allow players to catch. improve logic, removing testing statements
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Aug 17 20:27:00 2026
+
+@author: MBark
+"""
 
 import os
 import time
@@ -6,9 +11,9 @@ import csv
 
 clear = lambda: os.system('cls')
 
-testFish = [{"season" : "Winter", "time" : "Morning", "weather" : "Rain", "name" : "Test Fish 1" },
-            {"season" : "Summer", "time" : "Afternoon", "weather" : "Rain", "name" : "Test Fish 1" },
-            {"season" : "Spring", "time" : "Night", "weather" : "Rain", "name" : "Test Fish 1" }
+testFish = [{"season" : "Winter", "time" : "Morning", "weather" : "Rain", "name" : "Test Fish 1", "area" : "Mountains" },
+            {"season" : "Summer", "time" : "Afternoon", "weather" : "Rain", "name" : "Test Fish 1", "area" : "Beach" },
+            {"season" : "Spring", "time" : "Night", "weather" : "Rain", "name" : "Test Fish 1", "area" : "Island" }
             ]
 
 def getFish():
@@ -20,7 +25,7 @@ def getFish():
     return fishList
 
 class Fish:
-    def __init__(self, fishSeason, fishTime, fishWeather, fishName):
+    def __init__(self, fishSeason, fishTime, fishWeather, fishName, fishArea):
         self.fishSeason = fishSeason
         self.fishTime = fishTime
         self.fishWeather = fishWeather
@@ -75,7 +80,7 @@ def fishTime():
     return fishTime
     
 def fishWeather():
-    print("Please choose the current weather:")
+    print("What is the weather like?")
     time.sleep(1)
     print("Rain/Snow: A")
     time.sleep(1)
@@ -103,9 +108,28 @@ def findFish():
     s = fishSeason()    
     t = fishTime()
     w = fishWeather()
-    for  in testFish:
-        if testFish["season"] == fishSeason():
-            if testFish["time"] == fishTime():
-                if testFish["weather"] == fishWeather():
-                    print ("You can catch " + testFish["name"] + at testFish["area"])
+    catchableFish = []
     
+    for fish in testFish:
+        if testFish["season"] == s:
+            if testFish["time"] == t:
+                if testFish["weather"] == w:
+                    catchableFish.append(fish)
+                    
+    time.sleep(1)
+    if len(catchableFish) == 0:
+        print("There are no fish for you to catch today")
+    else:
+        print("You can catch the following fish")
+        for fish in catchableFish:
+            print(catchableFish["name"] + " in the " + catchableFish["area"])
+            time.sleep(1)
+            
+    time.sleep(2)
+    print ("would you like to go again?")
+    answer = input("Y/N?").lower()
+    if answer == "y":
+        findFish()
+    else:
+        return
+        
