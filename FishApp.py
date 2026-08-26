@@ -1,14 +1,17 @@
-#TODO: Improve logic, removing testing statements
-
 import os
 import time
 import csv
 
 clear = lambda: os.system('cls')
 
-testFish = [{"season" : "Winter", "time" : "Morning", "weather" : "Rain", "name" : "Test Fish 1", "area" : "Mountains" },
-            {"season" : "Summer", "time" : "Afternoon", "weather" : "Rain", "name" : "Test Fish 1", "area" : "Beach" },
-            {"season" : "Spring", "time" : "Night", "weather" : "Rain", "name" : "Test Fish 1", "area" : "Island" }
+#TODO add logic for multiple values per key and any values: change identifying if statements to contains rather than ==
+testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
+            {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
+            {"season" : "Summer/Winter", "time" : "Morning/Afternoon", "weather" : "Any", "name" : "Tuna", "area" : "Ocean/Island" },
+            {"season" : "Spring/Fall/Winter", "time" : "Morning/Afternoon", "weather": "Any", "name" : "Sardine", "area" : "Ocean/sland"},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             ]
 
 def getFish():
@@ -128,3 +131,9 @@ def findFish():
     else:
         return
         
+                
+                    
+    
+                    
+    
+    
