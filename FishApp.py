@@ -6,6 +6,8 @@ clear = lambda: os.system('cls')
 
 #TODO add logic for multiple values per key and any values: change identifying if statements to contains rather than ==
 
+#line 39 list error 
+
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
             {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
             {"season" : "Summer/Winter", "time" : "Morning/Afternoon", "weather" : "Any", "name" : "Tuna", "area" : "Ocean/Island" },
