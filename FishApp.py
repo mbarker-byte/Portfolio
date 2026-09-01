@@ -5,6 +5,7 @@ import csv
 clear = lambda: os.system('cls')
 
 #TODO add logic for multiple values per key and any values: change identifying if statements to contains rather than ==
+#TODO use lists instead of strings for values, use 
 
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
             {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
@@ -17,6 +18,7 @@ testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             ]
+
 
 legendaryFish=[]
 
@@ -135,6 +137,7 @@ def fishMenu():
             clear()
             regularFish()
         
+#Add logic to convert letter choices to a string value
 def regularFish():
     print("Please enter information when prompted.")
     time.sleep(2)
@@ -171,4 +174,3 @@ def legendaryFish():
         
     
 fishMenu()
-                
