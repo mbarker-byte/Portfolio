@@ -6,8 +6,6 @@ clear = lambda: os.system('cls')
 
 #TODO add logic for multiple values per key and any values: change identifying if statements to contains rather than ==
 
-#line 39 list error 
-
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
             {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
             {"season" : "Summer/Winter", "time" : "Morning/Afternoon", "weather" : "Any", "name" : "Tuna", "area" : "Ocean/Island" },
@@ -38,13 +36,7 @@ class Fish:
         self.fishName = fishName
         self.fishArea = fishArea
         
-testFishObject = Fish(testFish["season"], testFish["time"], testFish["weather"], testFish["name"])
 
-print (testFishObject)
-print (testFishObject.fishSeason)
-print (testFishObject.fishTime)
-print (testFishObject.fishWeather)
-print (testFishObject.fishName)
         
 
 def fishSeason():
@@ -80,11 +72,11 @@ def fishTime():
     print("Night: C")
     time.sleep(1)
     fishTime = input("Please choose a time:").lower()
-    if fishSeason not in ('a', 'b', 'c'):
+    if fishTime not in ('a', 'b', 'c'):
         print("Invalid option, please try again.")
         time.sleep(2)
         clear()
-        fishSeason()
+        fishTime()
     else:
         print("Thanks for choosing a time!")
         time.sleep(2)
@@ -102,11 +94,11 @@ def fishWeather():
     print("Stormy: C")
     time.sleep(1)
     fishWeather = input("Please choose the weather.").lower()
-    if fishSeason not in ('a', 'b'):
+    if fishWeather not in ('a', 'b'):
         print("Invalid option, please try again.")
         time.sleep(2)
         clear()
-        fishSeason()
+        fishWeather()
     else:
         print("Thanks for choosing the weather!")
         time.sleep(2)
@@ -152,9 +144,9 @@ def regularFish():
     catchableFish = []
     
     for fish in testFish:
-        if testFish["season"] == s:
-            if testFish["time"] == t:
-                if testFish["weather"] == w:
+        if fish["season"] == s:
+            if fish["time"] == t:
+                if fish["weather"] == w:
                     catchableFish.append(fish)
                     
     time.sleep(1)
@@ -176,3 +168,7 @@ def regularFish():
     
 def legendaryFish():
     print("Please enter information when prompted")
+        
+    
+fishMenu()
+                
