@@ -62,7 +62,15 @@ def fishSeason():
         time.sleep(2)
         clear()
         time.sleep(2)
-        return fishSeason
+        if fishSeason == "a":
+            return "Spring"
+        elif fishSeason ==  "b":
+            return "Summer"
+        elif fishSeason == "c":
+            return "Autumn"
+        elif fishSeason == "d":
+            return "Winter"
+         
     
 def fishTime():
     print("What time is it?")
@@ -84,7 +92,12 @@ def fishTime():
         time.sleep(2)
         clear()
         time.sleep(2)
-        return fishTime
+        if fishSeason == "a":
+            return "Morning"
+        elif fishSeason ==  "b":
+            return "Afternoon"
+        elif fishSeason == "c":
+            return "Night"
     
 def fishWeather():
     print("What is the weather like?")
@@ -106,7 +119,12 @@ def fishWeather():
         time.sleep(2)
         clear()
         time.sleep(2)
-        return fishWeather
+        if fishSeason == "a":
+            return "Rain"
+        elif fishSeason ==  "b":
+            return "Clear"
+        elif fishSeason == "c":
+            return "Stormy"
 
             
 
