@@ -8,6 +8,7 @@ clear = lambda: os.system('cls')
 #TODO use lists instead of strings for values
 #TODO Change Strings in the fish dictionary to alphanumeric options, have a seperate option dictionary to bind values to strings
 #TODO Use a CSV File for fish rather than an in file dictionary.
+#TODO Add caught value to CSV to check so that only uncaught fish are returned
 
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
             {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
