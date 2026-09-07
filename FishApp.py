@@ -19,6 +19,8 @@ testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name
             {"season" : "Spring/Fall", "time" : "Any", "weather": "Any", "name" : "Smallmouth Bass", "area" : "Town River/Forest Pond"},
             {"season" : "Summer", "time" : "Anyt", "weather": "Sun", "name" : "Rainbow Trout", "area" : "Town River/ Forest River/ Mountain Lake"},
             {"season" : "Fall", "time" : "Any", "weather": "Any", "name" : "Salmon", "area" : "Town River/Forest River/Forest Waterfalls"},
+            {"season" : "Fall/Winter", "time" : "Afternoon/Evening", "weather": "Rain", "name" : "Walleye", "area" : "Town River/Forest River/Forest Pond/Mountain Lake"},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             ]
 
