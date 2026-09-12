@@ -10,6 +10,7 @@ clear = lambda: os.system('cls')
 #TODO Use a CSV File for fish rather than an in file dictionary.
 #TODO Add caught value to CSV to check so that only uncaught fish are returned
 #Add defined options for fish time value
+#Refactor the fish list to be a database rather than dictionary
 
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
             {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
