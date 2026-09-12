@@ -24,7 +24,7 @@ testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name
             {"season" : "Winter", "time" : "Afternoon/Evening", "weather": "Any", "name" : "Perch", "area" : "Town River/Forest River/Forest Pond/Mountain Lake"},
             {"season" : "All", "time" : "Any", "weather": "Any", "name" : "Carp", "area" : "Mountain Lake/Secret Woods/Sewers/Mutant Bug Lair"},
             {"season" : "All", "time" : "Morning", "weather": "Rain", "name" : "Catfish", "area" : "Town River/Forest River/Secret Woods/Witch's Swamp"},
-            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
+            {"season" : "Summer/Winter", "time" : "Any", "weather": "Any", "name" : "Pike", "area" : "Town River/Forest River/Forest Pond"},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
