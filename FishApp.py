@@ -36,6 +36,8 @@ testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name
             {"season" : "Fall/Winter", "time" : "All Day", "weather": "Any", "name" : "Sea Cucumber", "area" : "Ocean"},
             {"season" : "Summer/Fall", "time" : "Night", "weather": "Any", "name" : "Super Cucumber", "area" : "Ocean"},
             {"season" : "All", "time" : "Any", "weather": "Any", "name" : "Stonefish", "area" : "Mines (Floor 20)"},
+            {"season" : "All", "time" : "Any", "weather": "Any", "name" : "Ice Pip", "area" : "Mines (Floor 60"},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             ]
 
