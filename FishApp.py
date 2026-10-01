@@ -44,6 +44,7 @@ testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name
             {"season" : "Summer/Winter", "time" : "All Day", "weather": "Any", "name" : "Midnight Carp", "area" : "Forest Pond/Mountain Lake/Ginger River"},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             ]
 
 
