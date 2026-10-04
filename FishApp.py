@@ -7,7 +7,7 @@ clear = lambda: os.system('cls')
 #TODO add logic for multiple values per key and any values: change identifying if statements to contains rather than ==
 #TODO use lists instead of strings for values
 #TODO Change Strings in the fish dictionary to alphanumeric options, have a seperate option dictionary to bind values to strings
-#TODO Use a CSV File for fish rather than an in file dictionary.
+#TODO Use a sql database for available fish rather than a dictionary
 #TODO Add caught value to CSV to check so that only uncaught fish are returned
 #Add defined options for fish time value
 #Refactor the fish list to be a database rather than dictionary
