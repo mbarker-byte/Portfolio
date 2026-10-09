@@ -56,6 +56,8 @@ testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name
             {"season" : "All", "time" : "Any", "weather": "Any", "name" : "Slimejack", "area" : "Mutant Bug Lair"},
             {"season" : "All", "time" : "Any", "weather": "Any", "name" : "String Ray", "area" : "Pirate Cove"},
             {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
+            {"season" : "", "time" : "", "weather": "", "name" : "", "area" : ""},
             ]
 
 
