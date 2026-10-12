@@ -18,6 +18,7 @@ Seasons
 Times (by hour)
 Weather
 """
+#Name and area are returned values so don't need to be searched or indexed
 
 
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
