@@ -12,6 +12,13 @@ clear = lambda: os.system('cls')
 #Add defined options for fish time value
 #Refactor the fish list to be a database rather than dictionary
 #Fish should be in tables for keys rather than fish-first
+"""
+Tables:
+Seasons
+Times (by hour)
+Weather
+"""
+
 
 testFish = [{"season" : "Summer", "time" : "Afternoon", "weather" : "Sun", "name" : "Pufferfish", "area" : "Ocean/Island" },
             {"season" : "Spring/Fall", "time" : "Anytime", "weather" : "Any", "name" : "Anchovy", "area" : "Ocean" },
