@@ -12,6 +12,7 @@ clear = lambda: os.system('cls')
 #Add defined options for fish time value
 #Refactor the fish list to be a database rather than dictionary
 #Fish should be in tables for keys rather than fish-first
+#Potentially make into a Symfony Webapp rather than python?
 """
 Tables:
 Seasons
