@@ -13,6 +13,7 @@ clear = lambda: os.system('cls')
 #Refactor the fish list to be a database rather than dictionary
 #Fish should be in tables for keys rather than fish-first
 #Potentially make into a Symfony Webapp rather than python?
+#I'm going to move on to other apps for now
 """
 Tables:
 Seasons
